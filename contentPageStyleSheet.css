@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:black;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+
+.NavBar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    border-radius:8px;
+}
+ul{
+ display:flex;
+ justify-content: space-around;
+ align-items: center;
+ list-style: none;
+ flex-direction:row;
+ gap:10px;
+ width:100%;
+ margin: 0;
+ padding: 0;
+
+}
+.NavBarLogo{
+    height:50px;
+    width:50px;
+    border:2px solid mediumpurple;
+    border-radius:9000px;
+    transition: 0.1s ease all;
+}
+.NavBarLogo:hover{
+    transform: scale(1.2);
+}
+.NavBar .Logo{
+    margin-right: auto;
+}
+.NavBar .Home{
+    font-family: "Avenir", serif;
+    font-size:25px;
+    padding:10px 30px;
+    border-radius: 50px;
+    transition:0.2s ease all;
+    text-decoration: none;
+    font-weight:bolder;
+}
+.NavBar .Home a{
+    color:black;
+}
+.NavBar .Home:hover{
+/*  background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);*/
+background-image:linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+transform:scale(1.05);
+  }
+  .NavBar .Home:hover a{
+    color:black;
+  }
+
+  .NavBar .Content{
+      font-family: "Avenir", serif;
+      font-size:25px;
+      padding: 10px 30px;
+      border-radius: 50px;
+      transition:0.2s ease all;
+      text-decoration: none;
+      font-weight:bolder;
+  }
+  .NavBar .Content a{
+      color:black;
+  }
+  .NavBar .Content:hover{
+      background-image:linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    transform:scale(1.05);
+  }
+  .NavBar .Content:hover a{
+    color:black;
+  }
+  .NavBar .Contacts{
+      font-family: "Avenir", serif;
+      font-size:25px;
+      padding: 10px 30px;
+      border-radius: 50px;
+      transition:0.2s ease all;
+      text-decoration: none;
+      font-weight:bolder;
+  }
+  .NavBar .Contacts a{
+      color:black;
+  }
+  .NavBar .Contacts:hover{
+    background-image:linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    transform:scale(1.05);
+  }
+  .NavBar .Contacts:hover a{
+    color:black;
+  }
+  .NavBar a:active{
+      color:white;
+  }
+ .background-image{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100vh;
+     object-fit: cover;
+     z-index: -1;
+ }
+ .container-wrapper{
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap:wrap;
+     gap:80px;
+
+ }
+ .BOX{
+     height:350px;
+     width:300px;
+     border:2px solid black;
+     margin:0;
+     padding:0;
+     display:flex;
+     justify-content:space-between;
+     flex-direction: column;
+     align-items: center;
+     gap:15px;
+     border-radius:9px;
+     transition: 0.2s ease all;
+
+ }
+ .BOX:hover{
+     -webkit-box-shadow: 0px 0px 38px 10px rgba(255,95,126,0.43);
+     box-shadow: 0px 0px 38px 10px rgba(255,95,126,0.43);
+     transform:scale(1.02);
+
+ }
+ .img{
+     height:260px;
+     width:300px;
+     border-top-right-radius: 9px;
+     border-top-left-radius:9px;
+ }
+.goodie-box{
+     height:70px;
+     width:300px;
+     border:1px solid black;
+     display:flex;
+     justify-content:space-between;
+     flex-direction: column;
+     align-items: center;
+     margin:0;
+     padding:0;
+     gap:0;
+     border-radius:9px;
+ }
+ .VideoTitle{
+     margin:0;
+     padding:0;
+     height:37px;
+     width:300px;
+     border:2px solid rebeccapurple;
+     text-align: center;
+/*     border-radius: 9px;*/
+
+ }
+
+.VideoTitle {background-image: linear-gradient(to right, #2C3E50 0%, #FD746C  51%, #2C3E50  100%)}
+.VideoTitle {
+margin: 0;
+padding: 0;
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+ background-size: 200% auto;
+color: white;
+ box-shadow: 0 0 20px #eee;
+/*border-radius: 10px;*/
+display: block;
+font-family: Futura, sans-serif;
+font-weight: bolder;
+font-size:20px;
+ }
+
+.VideoTitle:hover {
+background-position: right center; /* change the direction of the change here */
+ color: #fff;
+ text-decoration: none;
+}
+
+.button {background-image: linear-gradient(to right, #141E30 0%, #243B55  51%, #141E30  100%)}
+.button {
+    margin:0;
+    padding:0;
+    height:37px;
+    width:300px;
+    text-align: center;
+/*    text-transform: uppercase;*/
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: teal;
+    box-shadow: 0 0 20px #eee;
+/*    border-radius: 50px;*/
+    display: block;
+    font-family: Futura, sans-serif;
+    font-weight: bolder;
+    font-size:20px;
+
+}
+
+.button:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+}
+
+
+

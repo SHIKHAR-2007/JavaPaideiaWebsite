@@ -1,0 +1,318 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:black;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+
+.NavBar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    border-radius:8px;
+}
+ul{
+ display:flex;
+ justify-content: space-around;
+ align-items: center;
+ list-style: none;
+ flex-direction:row;
+ gap:10px;
+ width:100%;
+ margin: 0;
+ padding: 0;
+
+}
+.NavBarLogo{
+    height:50px;
+    width:50px;
+    border:2px solid mediumpurple;
+    border-radius:9000px;
+    transition: 0.1s ease all;
+}
+.NavBarLogo:hover{
+    transform: scale(1.2);
+}
+.NavBar .Logo{
+    margin-right: auto;
+}
+.NavBar .Home{
+    font-family: "Avenir", serif;
+    font-size:25px;
+    padding:10px 30px;
+    border-radius: 50px;
+    transition:0.2s ease all;
+    text-decoration: none;
+    font-weight:bolder;
+}
+.NavBar .Home a{
+    color:white;
+}
+.NavBar .Home:hover{
+/*  background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);*/
+background-image:linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+transform:scale(1.05);
+  }
+  .NavBar .Home:hover a{
+    color:white;
+  }
+
+  .NavBar .Content{
+      font-family: "Avenir", serif;
+      font-size:25px;
+      padding: 10px 30px;
+      border-radius: 50px;
+      transition:0.2s ease all;
+      text-decoration: none;
+      font-weight:bolder;
+  }
+  .NavBar .Content a{
+      color:white;
+  }
+  .NavBar .Content:hover{
+      background-image:linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    transform:scale(1.05);
+  }
+  .NavBar .Content:hover a{
+    color:white;
+  }
+  .NavBar .Contacts{
+      font-family: "Avenir", serif;
+      font-size:25px;
+      padding: 10px 30px;
+      border-radius: 50px;
+      transition:0.2s ease all;
+      text-decoration: none;
+      font-weight:bolder;
+  }
+  .NavBar .Contacts a{
+      color:white;
+  }
+  .NavBar .Contacts:hover{
+    background-image:linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    transform:scale(1.05);
+  }
+  .NavBar .Contacts:hover a{
+    color:white;
+  }
+  .NavBar a:active{
+      color:white;
+  }
+  .Material video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+  }
+  .Material{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      position: relative;
+      gap:190px;
+      flex-wrap:wrap;
+  }
+  .ProfileCard{
+      border-radius:15px;
+      height:550px;
+      width:600px;
+      padding:20px;
+      margin:0;
+      position: relative;
+      z-index: 1;
+      background-color:rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      display:flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap:20px;
+      padding-top: 30px;
+      transition:0.2s ease all;
+
+  }
+  .ProfileCard:hover{
+      -webkit-box-shadow: 1px 1px 27px 12px #5E3CFF;
+      box-shadow: 1px 1px 27px 12px #5E3CFF;
+      transform: scale(1.02);
+  }
+  .profile-card-img{
+      margin:0;
+      padding:0;
+      height:170px;
+      width:170px;
+      position: relative;
+      border-radius: 9000px;
+      transition: 0.1s ease all;
+
+  }
+  .profile-card-img:hover{
+     border:3px solid #D47BA0;
+     transform: scale(1.2);
+  }
+  .Display-Content{
+      display:flex;
+      justify-content:flex-start;
+      align-items:center;
+      height:auto;
+      width:500px;
+      flex-direction:column;
+      padding:10px;
+      gap:10px;
+
+  }
+  .ChannelName{
+      text-align: center;
+      margin:0;
+      padding:20px;
+      font-size:25px;
+      width:max-content;
+      font-family: Futura,sans-serif;
+      color:white;
+      font-weight:600;
+      border-radius: 1000px;
+      transition:0.2s ease all;
+  }
+  .ChannelName:hover{
+      background: #EEAECA;
+      background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+      transform:scale(1.07);
+      color:mediumpurple;
+      cursor: pointer;
+  }
+  .Subscribers{
+      text-align: center;
+      width:max-content;
+      margin:0;
+      padding:20px;
+      font-size:25px;
+      font-family: Futura,sans-serif;
+      color:white;
+      font-weight:600;
+      border-radius: 1000px;
+      transition:0.2s ease all;
+  }
+  .Subscribers:hover{
+      background: #EEAECA;
+      background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+      transform:scale(1.07);
+      color:mediumpurple;
+      cursor:pointer;
+  }
+  .UploadedVids{
+      text-align: center;
+      width:fit-content;
+      margin:0;
+      padding:20px;
+      font-size:25px;
+      font-family: Futura,sans-serif;
+      color:white;
+      font-weight:600;
+      border-radius: 1000px;
+      transition:0.2s ease all;
+  }
+  .UploadedVids:hover{
+      background: #EEAECA;
+      background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+      transform:scale(1.07);
+      color:mediumpurple;
+      cursor:pointer;
+  }
+
+  .right-card{
+      height:160px;
+      width:160px;
+      padding:0;
+      margin:0;
+      position: relative;
+      z-index: 1;
+      background-image:linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+      transition:0.2s ease all;
+      border-radius:10px;
+  }
+  .right-card:hover{
+      -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 2px 4px 50px 16px rgba(76,248,255,0.53);
+      box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 2px 4px 50px 16px rgba(76,248,255,0.53);
+      transform: scale(1.02);
+   }
+  .java-img{
+      height:150px;
+      width:150px;
+      padding:0;
+      margin:0;
+      position:relative;
+      top:5px;
+      left:5px;
+      z-index:1;
+  }
+  .left-card{
+      height:160px;
+      width:160px;
+      padding:0;
+      margin:0;
+      position: relative;
+      z-index: 1;
+      background-image:linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+      transition:0.2s ease all;
+      border-radius:10px;
+  }
+  .left-card:hover{
+      -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 2px 4px 50px 16px rgba(76,248,255,0.53);
+      box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 2px 4px 50px 16px rgba(76,248,255,0.53);
+     transform: scale(1.02);
+  }
+  .html-css-img{
+      height:150px;
+      width:150px;
+      padding:0;
+      margin:0;
+      position:relative;
+      top:5px;
+      left:5px;
+      z-index:1;
+      border-radius:10px;
+
+  }
+
+  .Link-pics{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 20px;
+      margin-top: 10px;
+  }
+
+  .img-youtube{
+      height:40px;
+      width:40px;
+      border-radius: 10px;
+      transition: 0.2s ease all;
+  }
+
+  .img-youtube:hover{
+      transform: scale(1.15);
+      box-shadow: 0 0 20px rgba(125, 69, 255, 0.6);
+  }
+
+  .img-twitter{
+      height:40px;
+      width:40px;
+      border-radius: 10px;
+      transition: 0.2s ease all;
+  }
+
+  .img-twitter:hover{
+      transform: scale(1.15);
+      box-shadow: 0 0 20px rgba(125, 69, 255, 0.6);
+  }
